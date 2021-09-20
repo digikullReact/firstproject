@@ -1,0 +1,8 @@
+One is common js module system -> node js --> //js runtive for servers // export and require 
+=// es6 import exports -->react and angular ,and almost most of the frontend based app  // import and export stament 
+// --->
+
+//   es6 import exports --->
+// if you have some code or you can some function or some variable or some js objects -->
+
+// you can export them or you can ship them for other files to use -->
