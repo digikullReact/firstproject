@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import React,{useState} from 'react'
 ;
 import Home from './components/Home';
+import Counter from './components/Counter';
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
     <div className="App">
       <Navbar/>
 
-      <Home/>
+     <Counter/>
     </div>
   );
 }

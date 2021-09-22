@@ -4,29 +4,29 @@ function Home() {
 
     //useState("Something") --->returns and array ,
 
-    let [name,setName]=useState() // React's way  to manage the data -->
+  const [state,setState]=useState({
+    name:"",
+    age:""
 
-    let [age,setAge]=useState() // React's way  to manage the data -->
+})
 
 
 
-
-
-    const handleChange2=()=>{
-
-    
-    }
     const handleChange=(event)=>{
-       
+      
+
+      setState({...state,[event.target.name]:event.target.value})
+
     }
 
-    const handleKeyUp=(event)=>{
-      //  console.log("Keyup",event.target.value)
-    }
 
     const clickData=()=>{
-      //  console.log(state);
+
+      ///console.log(document.getElementById("data").value)
+      console.log(state);
     }
+
+    
 
 
     // onchange 
@@ -37,8 +37,8 @@ function Home() {
     return (
         <div className="col-md-4 offset-4" style={{marginTop:"50px"}}>
 
-            <input className="form-control"  onChange={handleChange}  placeholder="Name" onKeyUp={handleKeyUp}  name="name" type="text"/>
-            <input className="form-control"  onChange={handleChange2}  placeholder="Age" name="age" type="text"/>
+            <input className="form-control" id="data" onChange={handleChange}  name="name" placeholder="Name"  name="name" type="text"/>
+            <input className="form-control"  onChange={handleChange} name="age"  placeholder="Age" name="age" type="text"/>
 
 
            
