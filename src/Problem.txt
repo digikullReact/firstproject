@@ -1,0 +1,10 @@
+You have to create three components
+Header 
+Footer 
+Slider 
+
+
+/// YOu hve to put them in App.js
+// Header
+/// Slider
+/// Footer -->
